@@ -7,6 +7,10 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 
 export const authOptions: AuthOptions = {
+    /* `adapter: PrismaAdapter(prisma)` is configuring NextAuth to use Prisma as the database adapter.
+    The `PrismaAdapter` function takes a Prisma client instance as an argument and returns an
+    adapter object that can be used by NextAuth to interact with the database. This allows NextAuth
+    to store and retrieve user data from the Prisma database. */
     adapter: PrismaAdapter(prisma),
     providers: [
         GithubProvider({
