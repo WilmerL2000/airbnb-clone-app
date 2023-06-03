@@ -61,6 +61,11 @@ export default function LoginModal() {
     });
   };
 
+  /* It is used to toggle between the login and registration modals. When the function is called, 
+  it closes the login modal using loginModal.onClose()` and opens the registration modal using `registerModal.onOpen()`. The
+`useCallback` hook is used to memoize the function and prevent unnecessary re-renders. The
+dependencies array `[loginModal, registerModal]` ensures that the function is only recreated when
+either `loginModal` or `registerModal` changes. */
   const onToggle = useCallback(() => {
     loginModal.onClose();
     registerModal.onOpen();
@@ -113,7 +118,7 @@ export default function LoginModal() {
         "
       >
         <p>
-          You do not have an account?
+          First time using Airbnb?
           <span
             onClick={onToggle}
             className="
@@ -122,8 +127,7 @@ export default function LoginModal() {
               hover:underline
             "
           >
-            {' '}
-            Sign up
+            Create an account
           </span>
         </p>
       </div>
