@@ -8,7 +8,10 @@ import MenuItem from './MenuItem';
 import useRegisterModal from '@/app/hooks/useRegisterModal';
 import useLoginModal from '@/app/hooks/useLoginModal';
 
-type Props = { currentUser?: null };
+import { signOut } from 'next-auth/react';
+import { SafeUser } from '@/app/types';
+
+type Props = { currentUser?: SafeUser | null };
 
 export default function UserMenu({ currentUser }: Props) {
   const registerModal = useRegisterModal();
@@ -105,7 +108,7 @@ lifecycle. */
                 />
                 <MenuItem label="Airbnb your home" onClick={() => {}} />
                 <hr />
-                <MenuItem label="Logout" onClick={() => {}} />
+                <MenuItem label="Logout" onClick={() => signOut()} />
               </>
             ) : (
               <>
