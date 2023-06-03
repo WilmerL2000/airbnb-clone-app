@@ -1,20 +1,23 @@
 'use client';
 
 import axios from 'axios';
-import { AiFillGithub } from 'react-icons/ai';
 import { signIn } from 'next-auth/react';
-import { FcGoogle } from 'react-icons/fc';
 import { useCallback, useState } from 'react';
-import { toast } from 'sonner';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
+import { AiFillGithub } from 'react-icons/ai';
+import { FcGoogle } from 'react-icons/fc';
+import { toast } from 'sonner';
 import useRegisterModal from '../../hooks/useRegisterModal';
-import Modal from './Modal';
+import Button from '../Button';
 import Heading from '../Heading';
 import Input from '../inputs/Input';
-import Button from '../Button';
+import Modal from './Modal';
+import useLoginModal from '@/app/hooks/useLoginModal';
 
 export default function RegisterModal() {
   const registerModal = useRegisterModal();
+  const loginModal = useLoginModal();
+
   const [isLoading, setIsLoading] = useState(false);
 
   const {
@@ -29,6 +32,12 @@ export default function RegisterModal() {
     },
   });
 
+  /**
+   * This function handles form submission for user registration and sends a POST request to the server
+   * using axios.
+   * @param data - The data parameter is an object that contains the form data submitted by the user. It
+   * is of type FieldValues, which is a generic type that represents the values of all fields in a form.
+   */
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
 
@@ -37,10 +46,11 @@ export default function RegisterModal() {
       .then(() => {
         toast.success('Registered!');
         registerModal.onClose();
-        // loginModal.onOpen();
+        loginModal.onOpen();
       })
       .catch((error) => {
-        toast.error('error');
+        console.log(error);
+        // toast.error(error);
       })
       .finally(() => {
         setIsLoading(false);
@@ -49,8 +59,8 @@ export default function RegisterModal() {
 
   const onToggle = useCallback(() => {
     registerModal.onClose();
-    // loginModal.onOpen();
-  }, [registerModal]);
+    loginModal.onOpen();
+  }, [registerModal, loginModal]);
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
