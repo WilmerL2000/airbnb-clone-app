@@ -48,15 +48,17 @@ export default function ListingHead({
           className="object-cover w-full"
           alt="Image"
         />
-        <div
-          className="
+        {currentUser && (
+          <div
+            className="
             absolute
             top-5
             right-5
           "
-        >
-          <HeartButton listingId={id} currentUser={currentUser} />
-        </div>
+          >
+            <HeartButton listingId={id} currentUser={currentUser} />
+          </div>
+        )}
       </div>
     </>
   );
