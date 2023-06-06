@@ -3,6 +3,15 @@ import { NextResponse } from "next/server";
 import prisma from "@/app/libs/prismadb";
 import getCurrentUser from "@/app/actions/getCurrentUser";
 
+/**
+ * This function creates a reservation for a listing with the given parameters and returns the updated
+ * listing with the new reservation.
+ * @param {Request} request - The HTTP request object containing information about the incoming
+ * request, such as headers, body, and URL.
+ * @returns a JSON response containing the updated listing and reservation data. If the currentUser is
+ * not found or if any of the required fields (listingId, startDate, endDate, totalPrice) are missing
+ * from the request body, the function returns an error response.
+ */
 export async function POST(
     request: Request,
 ) {

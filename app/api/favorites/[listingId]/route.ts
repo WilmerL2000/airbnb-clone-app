@@ -7,6 +7,16 @@ interface IParams {
     listingId?: string;
 }
 
+/**
+ * This is an async function that adds a listing ID to a user's list of favorite IDs and returns the
+ * updated user object.
+ * @param {Request} request - The HTTP request object containing information about the incoming
+ * request.
+ * @param  - - `request`: an object representing the HTTP request being made
+ * @returns a JSON response containing the updated user object after adding a new favorite listing ID
+ * to their list of favorite IDs. If there is no current user, it returns an error response. If the
+ * listing ID is invalid, it throws an error.
+ */
 export async function POST(
     request: Request,
     { params }: { params: IParams }
@@ -39,6 +49,16 @@ export async function POST(
     return NextResponse.json(user);
 }
 
+/**
+ * This is an async function that deletes a listing ID from a user's favorite IDs and returns the
+ * updated user object.
+ * @param {Request} request - The HTTP request object containing information about the incoming
+ * request.
+ * @param  - - `request`: an object representing the incoming HTTP request
+ * @returns a JSON response containing the updated user object after removing the specified listing ID
+ * from their list of favorite IDs. If there is no current user, it returns an error response. If the
+ * listing ID is invalid, it throws an error.
+ */
 export async function DELETE(
     request: Request,
     { params }: { params: IParams }

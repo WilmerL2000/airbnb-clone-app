@@ -4,7 +4,13 @@ import prisma from "@/app/libs/prismadb";
 
 import getCurrentUser from "@/app/actions/getCurrentUser";
 
-
+/**
+ * The function creates a new listing in a database using provided data and returns it as a JSON
+ * response, after performing basic validation checks.
+ * @param {Request} request - A `Request` object representing an HTTP request received by the server.
+ * It contains information about the request, such as the HTTP method, headers, and body.
+ * @returns a JSON response containing the newly created listing object.
+ */
 export async function POST(
     request: Request,
 ) {
