@@ -12,26 +12,26 @@ export interface IListingsParams {
 }
 
 export default async function getListings(
-    // params: IListingsParams
+    params: IListingsParams
 ) {
 
     try {
-        // const {
-        //     userId,
-        //     roomCount,
-        //     guestCount,
-        //     bathroomCount,
-        //     locationValue,
-        //     startDate,
-        //     endDate,
-        //     category,
-        // } = params;
+        const {
+            userId,
+            roomCount,
+            guestCount,
+            bathroomCount,
+            locationValue,
+            startDate,
+            endDate,
+            category,
+        } = params;
 
-        // let query: any = {};
+        let query: any = {};
 
-        // if (userId) {
-        //     query.userId = userId;
-        // }
+        if (userId) {
+            query.userId = userId;
+        }
 
         // if (category) {
         //     query.category = category;
@@ -65,7 +65,7 @@ export default async function getListings(
         // }
 
         const listings = await prisma.listing.findMany({
-            // where: query,
+            where: query,
             orderBy: {
                 createdAt: 'desc'
             }

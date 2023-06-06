@@ -1,7 +1,21 @@
-import React from 'react';
+import EmptyState from '@/app/components/EmptyState';
 
-type Props = {};
+import getCurrentUser from '@/app/actions/getCurrentUser';
+import getFavoriteListings from '@/app/actions/getFavoriteListings';
+import FavoritesClient from './FavoritesClient';
 
-export default function FavoritesPage({}: Props) {
-  return <div>page</div>;
+export default async function FavoritesPage() {
+  const listings = await getFavoriteListings();
+  const currentUser = await getCurrentUser();
+
+  if (listings.length === 0) {
+    return (
+      <EmptyState
+        title="No favorites found"
+        subtitle="Looks like you have no favorite listings."
+      />
+    );
+  }
+
+  return <FavoritesClient listings={listings} currentUser={currentUser} />;
 }

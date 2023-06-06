@@ -4,9 +4,7 @@ import getCurrentUser from '@/app/actions/getCurrentUser';
 import getReservations from '@/app/actions/getReservations';
 import TripsClient from './TripsClient';
 
-type Props = {};
-
-export default async function Tripspage({}: Props) {
+export default async function Tripspage() {
   const currentUser = await getCurrentUser();
 
   if (!currentUser) {
