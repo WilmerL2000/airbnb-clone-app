@@ -8,6 +8,7 @@ import UserMenu from './UserMenu';
 
 import { SafeUser } from '@/app/types';
 import Categories from './Categories';
+import MobileLogo from './MobileLogo';
 
 type Props = {
   currentUser?: SafeUser | null;
@@ -19,7 +20,14 @@ export default function Navbar({ currentUser }: Props) {
       <div className="py-4 border-b-[1px]">
         <Container>
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
-            <Logo />
+            <div>
+              <div className="hidden md:block">
+                <Logo />
+              </div>
+              <div className="md:hidden">
+                <MobileLogo />
+              </div>
+            </div>
             <Search />
             <UserMenu currentUser={currentUser} />
           </div>
