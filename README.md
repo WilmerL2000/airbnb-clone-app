@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <h1 align="center">Airbnb Clone App</h1>
-    <img src="https://res.cloudinary.com/wils09/image/upload/v1686198213/GitHub/airbnb-clone/home_tw61su.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1686248755/GitHub/airbnb-clone/home2_xvfmc4.jpg" width="100%" >
   <p align="center">
     <a href="https://dream-stay-w.vercel.app/" target="_blank">Web Page</a>
   </p>
@@ -120,6 +120,22 @@ This project is developed with MERN Stack, Material UI and other technologies. I
           <img src="https://res.cloudinary.com/wils09/image/upload/v1686199544/GitHub/assets/reacthookform_kekzdz.png" width="64" height="48" alt="React Hook Form" />
         <br><strong>React Hook Form</strong>        
       </td>      
+      <td align="center" width="96">
+          <img src="https://res.cloudinary.com/wils09/image/upload/v1682564470/GitHub/assets/cloudinary_sjvklt.png" width="64" height="48" alt="Next Cloudinnary" />
+        <br><strong>Next Cloudinnary</strong>        
+      </td>      
+      <td align="center" width="96">        
+        <br><strong>Bcrypt</strong>        
+      </td>      
+      <td align="center" width="96">        
+        <br><strong>Date-fns</strong>        
+      </td>      
+      <td align="center" width="96">        
+        <br><strong>React-date-range</strong>        
+      </td>      
+      <td align="center" width="96">        
+        <br><strong>React-select</strong>        
+      </td>  
     </tr>
      <tr>
       <td align="center" width="96">          
@@ -152,6 +168,21 @@ This project is developed with MERN Stack, Material UI and other technologies. I
       <td align="center" width="96">
         <br>7.44.3
       </td>      
+      <td align="center" width="96">
+        <br>4.12.0
+      </td>      
+      <td align="center" width="96">
+        <br>5.1.0
+      </td>      
+      <td align="center" width="96">
+        <br>2.30.0
+      </td>      
+      <td align="center" width="96">
+        <br>1.4.0
+      </td>      
+      <td align="center" width="96">
+        <br>5.7.3
+      </td>      
     </tr>
   </table>
 
@@ -164,6 +195,10 @@ This project is developed with MERN Stack, Material UI and other technologies. I
 ### Desktop
 
 <div align="center">
+  <div>
+    <h3>Home Page</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1686198213/GitHub/airbnb-clone/home_tw61su.jpg" width="100%" >
+  </div>
   <div>
     <h3>Login</h3>
     <img src="https://res.cloudinary.com/wils09/image/upload/v1686198935/GitHub/airbnb-clone/login_ktrxtl.jpg" width="100%" >
@@ -178,7 +213,7 @@ This project is developed with MERN Stack, Material UI and other technologies. I
 
 <div align="center">
   <div>
-    <img src="" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1686245983/GitHub/airbnb-clone/mobile1_ju2j0k.jpg" width="100%" >
   </div>
 </div>
 

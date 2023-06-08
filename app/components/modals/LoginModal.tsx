@@ -127,6 +127,7 @@ either `loginModal` or `registerModal` changes. */
               hover:underline
             "
           >
+            {' '}
             Create an account
           </span>
         </p>
