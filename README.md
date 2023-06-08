@@ -58,7 +58,7 @@
 
 ## About The Project
 
-This project is developed with MERN Stack, Material UI and other technologies. It allows users to post, like and dislike, as well as add comments and other functions that will be detailed below.
+This project is developed with Next.js 13 and the new App Router: React, Tailwind, Prisma, MongoDB, NextAuth and other tecnologies. It has many of the features of the main application as detailed below.
 
 ### Features
 
@@ -252,11 +252,7 @@ _Follow the instructions below_
    npx prisma db push
    ```
 
-5. Enter `PORT` KEY in `.env` file in server folder
-   ```js
-   API_KEY = 'ENTER YOUR API';
-   ```
-6. Start the app
+5. Start the app
    ```sh
    npm run dev
    ```
