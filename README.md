@@ -62,20 +62,20 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
 
 ### Features
 
-- Credential authentication
-- Google authentication
-- Github authentication
-- Image upload using Cloudinary CDN
-- Client form validation and handling using react-hook-form
-- Calendars with react-date-range
-- Booking / Reservation system
-- Guest reservation cancellation
-- Owner reservation cancellation
-- Creation and deletion of properties
-- Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms
+- Credential authentication.
+- Google authentication.
+- Github authentication.
+- Image upload using Cloudinary CDN.
+- Client form validation and handling using react-hook-form.
+- Calendars with react-date-range.
+- Booking / Reservation system.
+- Guest reservation cancellation.
+- Owner reservation cancellation.
+- Creation and deletion of properties.
+- Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms.
   For example we will filter out properties that have a reservation in your desired date range to travel
-- Favorites system
-- Shareable URL filters
+- Favorites system.
+- Shareable URL filters.
 
 ### Tech Stack
 
@@ -207,6 +207,37 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
     <h3>Register</h3>
     <img src="https://res.cloudinary.com/wils09/image/upload/v1686198935/GitHub/airbnb-clone/register_bfgxad.jpg" width="100%" >
   </div>
+  <div>
+    <h3>My Properties</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379367/GitHub/airbnb-clone/properties_rvbzsh.jpg" width="100%" >
+  </div>
+  <div>
+    <h3>My Trips</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379369/GitHub/airbnb-clone/trips_zpkjkz.jpg" width="100%" >
+  </div>
+  <div>
+    <h3>Reservations Made To My Properties</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379368/GitHub/airbnb-clone/reservations_zlx6mu.jpg" width="100%" >
+  </div>
+  <div>
+    <h3>My Favorites</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687380916/GitHub/airbnb-clone/favorites_wtman8.jpg" width="100%" >
+  </div>
+  <div>
+    <h3>Add New Propertie</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379367/GitHub/airbnb-clone/add_prop_1_st1i7x.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379368/GitHub/airbnb-clone/add_prop_2_x1bnwh.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379367/GitHub/airbnb-clone/add_prop_3_vjo8fm.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379369/GitHub/airbnb-clone/add_prop_4_ri59a3.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379370/GitHub/airbnb-clone/add_prop_5_h1uoby.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379370/GitHub/airbnb-clone/add_prop_6_wzleb5.jpg" width="100%" >
+  </div>
+  <div>
+    <h3>Filter Properties</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687381250/GitHub/airbnb-clone/filter_1_faxfyl.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379370/GitHub/airbnb-clone/filter_2_xvinwk.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687379367/GitHub/airbnb-clone/filter_3_cds0qk.jpg" width="100%" >
+  </div>
 </div>
 
 ### Mobile
@@ -235,7 +266,9 @@ _Follow the instructions below_
    ```sh
    npm install
    ```
-3. Setup `.env` file
+3. Go to `https://console.cloud.google.com` and create a new project
+4. Go to your GitHub account and in `Settings - Developer settings` create a new OAuth App
+5. Setup `.env` file
 
    ```js
    DATABASE_URL=
@@ -246,13 +279,13 @@ _Follow the instructions below_
    NEXTAUTH_SECRET=
    ```
 
-4. Setup Prisma
+6. Setup Prisma
 
    ```shell
    npx prisma db push
    ```
 
-5. Start the app
+7. Start the app
    ```sh
    npm run dev
    ```
