@@ -224,7 +224,7 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687380916/GitHub/airbnb-clone/favorites_wtman8.jpg" width="100%" >
   </div>
   <div>
-    <h3>Add New Propertie</h3>
+    <h3>Add New Property</h3>
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687379367/GitHub/airbnb-clone/add_prop_1_st1i7x.jpg" width="100%" >
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687379368/GitHub/airbnb-clone/add_prop_2_x1bnwh.jpg" width="100%" >
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687379367/GitHub/airbnb-clone/add_prop_3_vjo8fm.jpg" width="100%" >
@@ -239,6 +239,8 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687379367/GitHub/airbnb-clone/filter_3_cds0qk.jpg" width="100%" >
   </div>
 </div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Mobile
 
