@@ -50,6 +50,12 @@
         <li><a href="#mobile">Mobile</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#api">API</a>
+      <ul>
+        <li><a href="#routes-list">Routes List</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -233,6 +239,11 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687379370/GitHub/airbnb-clone/add_prop_6_wzleb5.jpg" width="100%" >
   </div>
   <div>
+    <h3>View a Property and Make a Reservation</h3>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687548111/GitHub/airbnb-clone/property_2_ldzklu.jpg" width="100%" >
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687548111/GitHub/airbnb-clone/property_1_bibxb2.jpg" width="100%" >
+  </div>
+  <div>
     <h3>Filter Properties</h3>
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687381250/GitHub/airbnb-clone/filter_1_faxfyl.jpg" width="100%" >
     <img src="https://res.cloudinary.com/wils09/image/upload/v1687379370/GitHub/airbnb-clone/filter_2_xvinwk.jpg" width="100%" >
@@ -247,6 +258,15 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
 <div align="center">
   <div>
     <img src="https://res.cloudinary.com/wils09/image/upload/v1686245983/GitHub/airbnb-clone/mobile1_ju2j0k.jpg" width="100%" >
+  </div>
+  <div>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687548341/GitHub/airbnb-clone/mobile_2_hpkjh9.jpg" width="100%" >
+  </div>
+  <div>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687548340/GitHub/airbnb-clone/mobile_3_gyxqex.jpg" width="100%" >
+  </div>
+  <div>
+    <img src="https://res.cloudinary.com/wils09/image/upload/v1687548340/GitHub/airbnb-clone/mobile_4_o1ngbi.jpg" width="100%" >
   </div>
 </div>
 
@@ -293,6 +313,127 @@ _Follow the instructions below_
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- REST API -->
+
+# API
+
+## API URL
+
+`http://localhost:3000`
+
+## Routes List:
+
+### Auth
+
+### 1. Register
+
+```
+ POST /api/register
+```
+
+> Body
+
+```javascript
+    {
+      email: String,
+      name: String,
+      password: String,
+    }
+```
+
+### Favorites
+
+#### 1. Add Property to Favorites
+
+```
+ POST /api/favorites/{listingId}
+```
+
+> Paremeter
+
+```javascript
+listingId: String;
+```
+
+#### 2. Delete Property From Favorites
+
+```
+ DELETE /api/favorites/{listingId}
+```
+
+> Paremeter
+
+```javascript
+listingId: String;
+```
+
+### Listings
+
+#### 1. Create New Property
+
+```
+ POST /api/listings
+```
+
+> Body
+
+```javascript
+    {
+      title: String,
+      description: String,
+      imageSrc: String,
+      category: String,
+      roomCount: Int,
+      bathroomCount: Int,
+      guestCount: Int,
+      locationValue: String,
+      price: Int,
+    }
+```
+
+#### 2. Delete Property
+
+```
+ DElETE /api/listings/{listingId}
+```
+
+> Paremeter
+
+```javascript
+listingId: String;
+```
+
+### Reservations
+
+#### 1. Create Reservation
+
+```
+ POST /api/reservations
+```
+
+> Body
+
+```javascript
+{
+  listingId: String,
+  startDate: Date,
+  endDate: Date,
+  totalPrice:String;
+}
+```
+
+#### 2. Cancel Reservation
+
+```
+ DELETE /api/reservations/{reservationId}
+```
+
+> Paremeter
+
+```javascript
+reservationId: String;
+```
 
 <!-- CONTACT -->
 
