@@ -130,6 +130,10 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
           <img src="https://res.cloudinary.com/wils09/image/upload/v1682564470/GitHub/assets/cloudinary_sjvklt.png" width="64" height="48" alt="Next Cloudinnary" />
         <br><strong>Next Cloudinnary</strong>        
       </td>      
+      <td align="center" width="96">
+          <img src="https://res.cloudinary.com/wils09/image/upload/v1682564470/GitHub/assets/mongodb_obxtml.png" width="64" height="48" alt="MongoDB" />
+        <br><strong>MongoDB</strong>        
+      </td>      
       <td align="center" width="96">        
         <br><strong>Bcrypt</strong>        
       </td>      
@@ -176,6 +180,8 @@ This project is developed with Next.js 13 and the new App Router: React, Tailwin
       </td>      
       <td align="center" width="96">
         <br>4.12.0
+      </td>      
+      <td align="center" width="96">
       </td>      
       <td align="center" width="96">
         <br>5.1.0
