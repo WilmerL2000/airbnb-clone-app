@@ -356,7 +356,7 @@ _Follow the instructions below_
  POST /api/favorites/{listingId}
 ```
 
-> Paremeter
+> Parameter
 
 ```javascript
 listingId: String;
@@ -368,7 +368,7 @@ listingId: String;
  DELETE /api/favorites/{listingId}
 ```
 
-> Paremeter
+> Parameter
 
 ```javascript
 listingId: String;
@@ -404,7 +404,7 @@ listingId: String;
  DElETE /api/listings/{listingId}
 ```
 
-> Paremeter
+> Parameter
 
 ```javascript
 listingId: String;
@@ -435,7 +435,7 @@ listingId: String;
  DELETE /api/reservations/{reservationId}
 ```
 
-> Paremeter
+> Parameter
 
 ```javascript
 reservationId: String;
